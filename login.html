@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Play Rep | Login</title>
+    <link href="./images/g-report-short-icon.png" rel="shortcut icon" />
+    <link href="css/boilerplate.css" rel="stylesheet" />
+
+    <link href="css/style.css" rel="stylesheet" />
+
+    <!--css and script for navigation-->
+    <!--css for buttons-->
+    <link href="font-awesome.css" rel="stylesheet" />
+
+    <style type="text/css">
+      span.field-validation-error {
+        text-shadow: 2px 2px 5px #800000;
+        color: #f7972a;
+        display: list-item;
+        font-size: 13px;
+        margin-left: 25px;
+        font-weight: bold;
+        font-family: Arial;
+        float: left;
+        width: 100%;
+      }
+      .fa {
+        background: none;
+        border: none;
+        font-size: 36px;
+        padding: 0;
+        color: #b6b6b6;
+      }
+      .bar-chart {
+        opacity: 0.5;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="top-bar"></div>
+    <div class="gridContainer clearfix">
+      <form action="/Login.mvc" method="post">
+        <div id="LayoutDiv1">
+          <!--header-->
+          <div class="header">
+            <!--logo-->
+            <div class="logo">
+              <a href="/Login/Index" title="Main Page">
+                <img src="./images/logo.png" alt="Logo" />
+              </a>
+            </div>
+            <!--logo end-->
+          </div>
+          <!--header end-->
+
+          <!--container-->
+          <div class="container">
+            <!--login-div-->
+            <div class="login-div">
+              <div class="login-row login-row-width">
+                <h2>Login</h2>
+              </div>
+              <div class="login-row fields">
+                <div class="login-label">
+                  <i class="fa fa-user"></i>
+                </div>
+                <div class="login-fields">
+                  <input
+                    autocomplete="off"
+                    data-val="true"
+                    data-val-regex="Please Provide Valid Login ID"
+                    data-val-regex-pattern="^GK[0-9]{8}$"
+                    data-val-required="Please Provide Login ID"
+                    id="username"
+                    maxlength="10"
+                    name="strLoginID"
+                    placeholder="User Name :"
+                    type="text"
+                    value=""
+                  />
+                </div>
+              </div>
+              <div class="login-row fields">
+                <div class="login-label">
+                  <i class="fa fa-lock"></i>
+                </div>
+                <div class="login-fields">
+                  <input
+                    autocomplete="off"
+                    data-val="true"
+                    data-val-required="Please Provide Password"
+                    id="password"
+                    name="strLoginPassword"
+                    onCopy="return false"
+                    onDrag="return false"
+                    onDrop="return false"
+                    onPaste="return false"
+                    oncontextmenu="return false;"
+                    placeholder="Password :"
+                    type="password"
+                  />
+                </div>
+              </div>
+              <div class="login-row fields">
+                <div class="login-label">
+                  <i class="fa fa-lock"></i>
+                </div>
+                <div class="login-fields">
+                  <input
+                    autocomplete="off"
+                    class="captchaText"
+                    data-val="true"
+                    data-val-required="Please Provide Captcha Text from Image"
+                    id="txtCaptcha"
+                    name="strCaptcha"
+                    onCopy="return false"
+                    onDrag="return false"
+                    onDrop="return false"
+                    onPaste="return false"
+                    oncontextmenu="return false;"
+                    placeholder="Enter Image Text -> "
+                    type="text"
+                    value=""
+                  />
+                </div>
+
+                <span>
+                  <img src="/Login.mvc/CaptchaImage" />
+                  <img src="/Login.mvc/CaptchaImage2" class="imgLeftMargin" />
+                </span>
+              </div>
+              <div>
+                <span
+                  class="field-validation-valid"
+                  data-valmsg-for="strLoginID"
+                  data-valmsg-replace="true"
+                ></span>
+                <span
+                  class="field-validation-valid"
+                  data-valmsg-for="strLoginPassword"
+                  data-valmsg-replace="true"
+                ></span>
+                <span
+                  class="field-validation-valid"
+                  data-valmsg-for="strCaptcha"
+                  data-valmsg-replace="true"
+                ></span>
+              </div>
+              <div class="login-row login-submit">
+                <div class="login-fields">
+                  <input type="checkbox" /> Remember Me
+                  <span style="float: right"></span>&nbsp;
+                </div>
+                <input
+                  type="submit"
+                  name="btnCheckLogin"
+                  id="btnCheckLogin"
+                  value="Login"
+                />
+              </div>
+            </div>
+            <!--login-div end-->
+
+            <!--bar-chart-->
+            <div class="bar-chart">
+              <img src="./images/login-bar-chart.png" alt="Bar Chart" />
+            </div>
+            <!--bar-chart-->
+          </div>
+          <!--container end-->
+
+          <!--footer-->
+          <footer>
+            <div class="copyright">
+              All rights reserved. &copy; Copyright 2014.
+            </div>
+          </footer>
+          <!--footer end-->
+        </div>
+      </form>
+    </div>
+    <link
+      href="/Content/css?v=oYihV9CehCus4xDq018je822-VWqI_ehba87oR13A1A1"
+      rel="stylesheet"
+    />
+
+    <script src="/bundles/modernizr?v=82JJDuTDoQ0j65CNfeBV8hUOVySHHONs4YIm_SSPAOQ1"></script>
+
+    <script src="/bundles/jquery?v=HC4hxV9VXsZEXFCWG83KWC1-hkJsPRm2puVu2N2DZFE1"></script>
+
+    <script src="/bundles/jqueryval?v=1uZQz_gliGmiXF9AzYoFskO6vHJcoup_eaT1u2md_aE1"></script>
+    <script
+      src="https://kit.fontawesome.com/ac2441e927.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      /// <reference path="../jquery-1.7.1.js" />
+      $(function () {
+        $("#username").keyup(function () {
+          $(this).val($(this).val().toUpperCase());
+        });
+      });
+    </script>
+  </body>
+</html>
