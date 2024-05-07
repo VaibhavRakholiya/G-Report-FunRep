@@ -1,0 +1,223 @@
+
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TripleFun</title>
+  <link href="./images/g-report-short-icon.png" rel="shortcut icon"/>
+  <link href="./css/boilerplate.css" rel="stylesheet"/>
+
+  <link href="./css/style.css" rel="stylesheet"/>
+
+
+  <!--css for buttons--> 
+  <link href="./css/font-awesome.css" rel="stylesheet"/>
+  <script src="./js/respond.js"></script>
+        <!--css and script for navigation-->
+        <script src="./js/jquery1.js"></script>
+        <script src="./js/jqueryresmenu.js"></script>
+ </head>
+ <body id="page1">
+  <div id="loader" class="loader"></div>
+  <div class="top-bar"></div>
+   <div class="gridContainer clearfix">
+  	<div id="LayoutDiv1">
+     <!--header-->
+     <div class="header">
+      <!--logo-->
+      <div class="logo">
+       <a href="/Reports.mvc/Index" title="Main Page">
+       	<img src="./images/logo.png" alt="Logo"/>
+       </a>
+      </div>
+      <!--user-details-->
+      <div class="user-details">            	
+       <span>Welcome</span>
+       <strong id="logout"><em>Neeru Tomar Gwalior MP</em>&nbsp;</strong>
+      </div>
+      <div class="panel">
+       <a href="/LogOut.mvc/UserLogOut" title="Logout"><i class="fa-power-off">&nbsp; Logout</i></a>
+      </div>
+      <!--user-details end-->
+      
+ <nav><ul class="toresponsive" id="menu4"><li><a href="#">Reports</a><ul><li><a href="/Reports.mvc/Revenue">Revenue</a></li><li  class='new-opt'><a href="/PokerRevenue.mvc">Poker Revenue</a></li><li><a href="/Reports.mvc">Point Transfer</a></li><li><a href="/PKReports.mvc">Multiplayer Point Transfer</a></li><li><a href="/Reports.mvc/DailyStatus">Daily Status</a></li></ul></li><li><a href="#" class="active">Draw Details</a><ul><li><a href="/DrawDetails.mvc/FunTarget">Fun Target</a></li><li><a href="/DrawDetails.mvc/FunRoullet">Fun Roullet</a></li><li><a href="/DrawDetails.mvc/TripleFun">Triple Fun</a></li><li><a href="/DrawDetails.mvc/FunAB">Fun AB</a></li></ul></li><li><a href="#">Mail Report</a><ul><li><a href="/MailReport.mvc/AgentMail">Agent Mail</a></li></ul></li><li><a href="/WeekllyDetails.mvc/WeekReport">Weekly Details Reports</a><ul></ul></li><li><a href="/LogOut.mvc/UserLogOut">LogOut</a><ul></ul></nav>
+
+      <!--nav-->
+              
+      <!--nav end-->
+     </div>
+     <!--header end-->                
+        
+     <!--container-->
+     <div class="container">
+      <h2>Triple Fun</h2>
+      <span class="remainLoan"></span>
+      <!--row-->
+      <div class="row">
+       <div>
+
+
+<form action="/DrawDetails.mvc/FunTarget" method="post"> 
+    <div class="grid" style="height: auto;">
+        <table style="width:100%;">
+            <thead>
+                <tr>
+                    <th>Sr no.</th>
+                    <th>Winning No.</th>
+                    <th>Draw Time</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+            </tbody>
+        </table>
+        <table style="width: 100%;">
+            <tbody>
+                <tr  style="background: transparent;">
+                    <td>
+                        <i
+                            class="fa-backward fa-solid"
+                            style="cursor:pointer;"
+                            alt="Page 1"
+                            pageval="1"
+                        ></i>
+                    </td>
+                    <td>
+                        <i
+                            class="fa-caret-left fa-solid"
+                            style="cursor:pointer;"
+                            alt="Previous"
+                            pageval="1"
+                        ></i>
+                    </td>
+                    <td>
+                        <a href="/" alt="page1">1</a>
+                    </td>
+                    <td>
+                        <a href="/" alt="page1">2</a>
+                    </td><td>
+                        <a href="/" alt="page1">3</a>
+                    </td><td>
+                        <a href="/" alt="page1">4</a>
+                    </td>
+                    <td>
+                        <input
+                            id="dvRevenuetxtJqGridGoToPage"
+                            type="text"
+                            value="1"
+                            style="width:30px;text-align: right;"
+                        >
+                        / 1
+                        <input type="button" value="Go">
+                    </td>
+                    <td>
+                        <select>
+                            <option value="10">10 Records</option>
+                            <option value="20">20 Records</option>
+                            <option value="30">30 Records</option>
+                            <option value="40">40 Records</option>
+                            <option value="50">50 Records</option>
+                            <option value="60">60 Records</option>
+                            <option value="70">70 Records</option>
+                            <option value="80">80 Records</option>
+                            <option value="90">90 Records</option>
+                            <option value="100">100 Records</option>
+                        </select>
+                    </td>
+                    <td>
+                        <i
+                            class="fa-caret-right fa-solid"
+                            style="cursor: pointer;"
+                            alt="Next"
+                            pageval="1"
+                        ></i>
+                    </td>
+                    <td>
+                        <i
+                            class="fa-forward fa-solid"
+                            style="cursor: pointer;"
+                            alt="Last Page"
+                            pageval="1"
+                        ></i>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</form>
+
+</div> 
+      </div>
+      <!--row end-->
+            
+      <!--bar-chart-->
+      <div class="bar-chart">
+       <img src="./images/login-bar-chart.png" alt="Bar Chart"/>
+      </div>
+      <!--bar-chart-->
+     </div>
+     <!--container end-->
+        
+     <!--footer-->
+     <footer>
+      <div class="copyright">All rights reserved. &copy; Copyright 2014.</div>
+     </footer>
+     <!--footer end-->
+    </div>
+   </div>
+  
+ <link href="./css/jquery-ui.css" rel="stylesheet"/>
+ <link href="./css/loader.css" rel="stylesheet"/>
+ <link href="./css/jqgridview.css" rel="stylesheet">
+ <script src="./js/modernizr.js"></script>
+ <script src="./js/jquery.js"></script>
+ <script src="./js/jqueryval.js"></script>
+ <script src="./js/jquery-ui.js"></script>
+ <script src="./js/grid.js"></script>
+ <link href="./css/GridView.css" rel="stylesheet"/>
+ <link href="./css/datepicker.css" rel="stylesheet"/>
+ <script src="https://kit.fontawesome.com/ac2441e927.js" crossorigin="anonymous"></script>
+
+ <script src="./js/datepicker.js"></script>
+  <script type="text/javascript">
+      $("#menu4 li ul").hover(function () { // Mouse Over
+          $(this).parent().addClass("active");
+      },
+     function () { // Mouse Out
+         $(this).parent().removeClass("active");
+     });
+
+     $(document).ready(function () {
+         $("#logout").click(function () {
+             $(".panel").slideToggle("slow");
+         });
+
+         function copyToClipboard() {
+             // Create a "hidden" input
+             var aux = document.createElement("input");
+             // Assign it the value of the specified element
+             aux.setAttribute("value", "Print Screen Lol.");
+             // Append it to the body
+             document.body.appendChild(aux);
+             // Highlight its content
+             aux.select();
+             // Copy the highlighted text
+             document.execCommand("copy");
+             // Remove it from the body
+             document.body.removeChild(aux);
+         }
+
+         $(window).keyup(function (e) {
+             if (e.keyCode == 44) {
+                 copyToClipboard();
+             }
+         });
+     });
+   </script>
+</body>
+</html>
